@@ -1,0 +1,101 @@
+:root{
+  --green:#176b4d;
+  --green-2:#0f5137;
+  --green-soft:#eaf5f0;
+  --bg:#f5f7f6;
+  --card:#ffffff;
+  --text:#183029;
+  --muted:#718078;
+  --line:#dce6e1;
+  --danger:#b42318;
+  --warning:#9a6700;
+  --shadow:0 14px 40px rgba(25,58,46,.10);
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text)}
+button,input,select{font:inherit}
+.hidden{display:none!important}
+.login-page{min-height:100vh;display:grid;place-items:center;padding:24px;background:
+radial-gradient(circle at top right,rgba(23,107,77,.16),transparent 28%),
+linear-gradient(135deg,#f7faf8,#edf5f1)}
+.login-card{width:min(100%,440px);background:#fff;border:1px solid var(--line);border-radius:24px;padding:34px;box-shadow:var(--shadow)}
+.brand-mark{width:70px;height:70px;border-radius:20px;display:grid;place-items:center;background:var(--green);color:#fff;font-weight:800;font-size:22px;margin-bottom:20px}
+.brand-mark.small{width:46px;height:46px;border-radius:14px;font-size:15px;margin:0}
+.eyebrow{font-size:12px;letter-spacing:.1em;font-weight:800;color:var(--green);margin:0 0 6px}
+h1{margin:0 0 8px;font-size:32px}
+h2,h3{margin-top:0}
+.muted{color:var(--muted);line-height:1.6}
+.form-stack{display:grid;gap:16px;margin-top:24px}
+label{display:grid;gap:7px;font-size:14px;font-weight:700}
+input,select{width:100%;border:1px solid var(--line);border-radius:12px;padding:12px 14px;background:#fff;outline:none}
+input:focus,select:focus{border-color:var(--green);box-shadow:0 0 0 3px rgba(23,107,77,.10)}
+.password-wrap{display:flex;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.password-wrap input{border:0;border-radius:0}
+.text-btn{border:0;background:#fff;color:var(--green);font-weight:800;padding:0 14px;cursor:pointer}
+.btn{border:0;border-radius:12px;padding:12px 16px;font-weight:800;cursor:pointer}
+.btn-primary{background:var(--green);color:#fff}
+.btn-primary:hover{background:var(--green-2)}
+.btn-secondary{background:var(--green-soft);color:var(--green)}
+.btn-ghost{background:transparent;border:1px solid rgba(255,255,255,.25);color:#fff}
+.btn-danger{background:#fff0ee;color:var(--danger)}
+.message{min-height:20px;margin:0;text-align:center;color:var(--danger);font-size:14px}
+.login-note{margin:18px 0 0;font-size:12px;color:var(--muted);line-height:1.5}
+.app-shell{min-height:100vh;display:grid;grid-template-columns:250px 1fr}
+.sidebar{background:var(--green-2);color:#fff;padding:22px 18px;display:flex;flex-direction:column;justify-content:space-between}
+.side-brand{display:flex;align-items:center;gap:12px;margin-bottom:26px}
+.side-brand span{display:block;font-size:12px;opacity:.75}
+.nav-menu{display:grid;gap:6px}
+.nav-btn{width:100%;border:0;background:transparent;color:rgba(255,255,255,.78);text-align:left;padding:11px 12px;border-radius:10px;cursor:pointer;font-weight:700}
+.nav-btn:hover,.nav-btn.active{background:rgba(255,255,255,.12);color:#fff}
+.main-area{min-width:0}
+.topbar{height:86px;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 28px}
+.topbar h2{margin:0;font-size:22px}
+.user-chip{display:flex;align-items:center;gap:10px}
+.user-chip span{display:block;color:var(--muted);font-size:12px}
+.avatar{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:var(--green-soft);color:var(--green);font-weight:900}
+.content{padding:28px}
+.grid{display:grid;gap:18px}
+.grid-4{grid-template-columns:repeat(4,minmax(0,1fr))}
+.grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px;box-shadow:0 5px 18px rgba(25,58,46,.04)}
+.stat-label{color:var(--muted);font-size:13px;font-weight:700}
+.stat-value{font-size:28px;font-weight:900;margin-top:6px}
+.section-head{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:15px}
+.table-wrap{overflow:auto;border:1px solid var(--line);border-radius:14px}
+table{width:100%;border-collapse:collapse;background:#fff}
+th,td{padding:12px 14px;border-bottom:1px solid var(--line);text-align:left;font-size:13px;white-space:nowrap}
+th{background:#f7faf8;color:#53645c;font-size:12px;text-transform:uppercase;letter-spacing:.04em}
+tr:last-child td{border-bottom:0}
+.badge{display:inline-flex;align-items:center;border-radius:999px;padding:5px 9px;font-size:11px;font-weight:800}
+.badge-green{background:#e8f7ef;color:#176b4d}
+.badge-yellow{background:#fff6d9;color:#8a6200}
+.badge-gray{background:#edf0ef;color:#69766f}
+.badge-blue{background:#edf4ff;color:#2456a6}
+.progress{height:10px;border-radius:999px;background:#e6ece9;overflow:hidden}
+.progress>span{display:block;height:100%;background:var(--green);border-radius:999px}
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;align-items:end}
+.toolbar label{min-width:170px}
+.indicator-section{margin-top:18px}
+.indicator-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.indicator-item{display:flex;gap:12px;align-items:flex-start;padding:13px;border:1px solid var(--line);border-radius:12px;background:#fff}
+.indicator-item input{width:19px;height:19px;margin-top:1px;accent-color:var(--green)}
+.indicator-item strong{display:block;font-size:13px}
+.indicator-item span{font-size:12px;color:var(--muted)}
+.action-row{display:flex;justify-content:flex-end;gap:10px;margin-top:20px}
+.loading-screen{min-height:100vh;display:grid;place-items:center;align-content:center;gap:12px}
+.spinner{width:38px;height:38px;border:4px solid #dfe9e4;border-top-color:var(--green);border-radius:50%;animation:spin .8s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.empty{padding:30px;text-align:center;color:var(--muted)}
+.mobile-only{display:none}
+@media(max-width:900px){
+  .app-shell{grid-template-columns:1fr}
+  .sidebar{position:sticky;top:0;z-index:20;flex-direction:row;padding:10px 12px;align-items:center;overflow:auto}
+  .side-brand{margin:0}.side-brand>div:last-child{display:none}
+  .nav-menu{display:flex}.nav-btn{white-space:nowrap}
+  .sidebar>.btn{display:none}
+  .topbar{padding:0 16px;height:74px}
+  .content{padding:16px}
+  .grid-4,.grid-2,.indicator-list{grid-template-columns:1fr}
+  .user-chip>div:last-child{display:none}
+}
